@@ -1,105 +1,123 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Muhammad Afif</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Afif Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .left-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 30%;
+            background-color: #343a40;
+            padding: 20px;
+        }
+        .right-panel {
+            margin-left: 30%;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: scroll;
+            background-color: #111;
+        }
+        .right-panel::-webkit-scrollbar {
+            display: none;
+        }
+        .right-panel {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-color: #444;
+            border-radius: 10px;
+        }
+        .btn-custom {
+            background-color: #343a40;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-		<body>
-			<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">MA</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data- target="#navbarSupportedContent" aria- controls="navbarSupportedContent" aria-expanded="false" aria- label="Toggle navigation">
-					<span class="navbar-toggler-icon"/>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#home">Home</a>
-						</li>
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#about">About</a>
-						</li>
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item mx-2">
-							<a class="nav-link" href="#">Contact Me</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+<body class="bg-dark text-white">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Panel -->
+            <div class="col-md-4 left-panel text-center text-white">
+                <img src="https://i.imgur.com/JRS9FIC.png" class="img-fluid rounded-circle mb-3" style="width: 50%;">
+                <h2>Muhammad Afif</h2>
+                <h4 class="text-muted">Software Engineer</h4>
+                <p>Fresh Graduate in Software Engineering <br> Based in Kuala Lumpur, Malaysia</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">LinkedIn</a></li>
+                    <li><a href="#" class="text-white">GitHub</a></li>
+                    <li><a href="mailto:your.email@example.com" class="text-white">Email</a></li>
+                </ul>
+            </div>
 
-			<div style="background-color:#BCBCBC;" id="home">
-				<div class="container pt-5" style="background-color:#BCBCBC;">
-					<div class="row align-items-center">
-						<div class="col">
-							<h1>MUHAMMAD AFIF</h1>
-							<p>Hi, I am Software Engineering degree holder and currently am an IT intern in Watsons HQ</p>
-						</div>
-						<div class="col">
-							<div class="row justify-content-center">
-								<div class="col text-center">
-									<img src="https://i.imgur.com/JRS9FIC.png" class="img-fluid" style="width:70%"></img>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div id="about">
-				<div class="container py-4">
+            <!-- Right Panel -->
+            <div class="col-md-8 right-panel">
+                <section class="mb-4">
+                    <h2>About Me</h2>
+                    <p>Software Engineering graduate from Universiti Malaysia Sabah with First Class Honours and hands-on experience in full-stack web development, SQL optimization, and task automation. Completed ICTC professional certification in Machine Learning as a Yayasan Peneraju scholar.</p>
+                </section>
+                
+                <section class="mb-4">
+                    <h2>Skills</h2>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge badge-primary m-1">PHP</span>
+                        <span class="badge badge-secondary m-1">HTML</span>
+                        <span class="badge badge-success m-1">CSS</span>
+                        <span class="badge badge-danger m-1">SQL</span>
+                        <span class="badge badge-warning m-1">JavaScript</span>
+                        <span class="badge badge-info m-1">Python</span>
+                    </div>
+                </section>
 
-					<div class="row my-3">
-						<div class="col col-lg-6 py-3">
-							<h4>Work Experience</h4>
-							<h6>Watsons HQ (TRX)</h6>
-							<p>IT Department Intern</p>
-							<ul>
-								<li>Create and amend SQL scripts</li>
-								<li>Dealing with users regarding the system</li>
-								<li>Setting up some window securities and hardware</li>
-								<li>Assists IT Technical Support Team</li>
-								<li>Assists IT Enterprise Team</li>
-							</ul>
-						</div>
+                <section class="mb-4">
+                    <h2>Experience</h2>
+                    <div class="card">
+                        <h4>IT Intern</h4>
+                        <p class="text-muted">Watsons Personal Care Store Sdn Bhd (March 2024 - Aug 2024)</p>
+                        <p>Developed, modified, and optimized SQL scripts to automate tasks and generate reports. Designed and developed task automation to streamline repetitive tasks using MS Power Automate.</p>
+                    </div>
+                </section>
 
-						<div class="col col-lg-6 py-3">
-							<h4>Academics</h4>
-							<p>Expected to graduate from <b>Universiti Malaysia Sabah (UMS)</b> by DEC 2024</p>
-							<h6>Universiti Malaysia Sabah</h6> 
-							<p>Bachelor of Computer Science with Honours (Software Engineering) <br>Current CGPA: 3.62 <br>2020-2024</p>
-							<h6>Foundation Universiti Malaysia Sabah</h6> 
-							<p>Science <br>Graduated with CGPA 3.4 <br>2019-2020</p>
-						</div>
-					</div>
-				</div>
-			</div>
+                <section class="mb-4">
+                    <h2>Education</h2>
+                    <div class="card">
+                        <h4>Bachelor of Computer Science, Software Engineering</h4>
+                        <p class="text-muted">Universiti Malaysia Sabah (2020 - 2024)</p>
+                    </div>
+                    <div class="card">
+                        <h4>Foundation in Science</h4>
+                        <p class="text-muted">Universiti Malaysia Sabah (2019 - 2020)</p>
+                    </div>
+                </section>
 
-			<div class="bg-dark mb-5" id="projects">	
-				<div class="container py-4 text-white">	
-					<div class="row py-3">
-						<div class="col">
-							<h3 class="text-center">Recent Project</h3>
-								<div class="card mt-5 text-dark" style="width:40%">
-									<img class="card-img-top" src="https://i.imgur.com/85cOqfd.png" alt="card img">
-									<div class="card-body">
-									<h5 class="card-title ">Final Year Project - HEALS website</h5>
-									<p>HEALS, stands for Health Appointment and Log System, is develop for my final year project assessment</p>
-									<a href="https://images.squarespace-cdn.com/content/v1/59dabf3b1f318d0de5df9e96/1508725133452-AQNW2UOTI4PFFT2TLQX1/soon-very-soon.jpg"
-									target="_blank" class="btn btn-primary">See more</a>
-									</div>
-								</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="bg-dark p-2 text-center text-white">
-				<div class="container mt-2">
-					<p>Copyright © 2024</p>
-				</div>
-			</div>
-
-		</body>
-	</html>
+                <section>
+                    <h2>Projects</h2>
+                    <div class="card">
+                        <div class="project-image"></div>
+                        <h4>HEALS: Health Appointment and Log System</h4>
+                        <p>A web-based clinic appointment system that implements machine learning to diagnose patient symptoms and display the urgency of the predicted disease.</p>
+                        <button class="btn-custom">View Code</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
